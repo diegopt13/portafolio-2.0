@@ -1,0 +1,452 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio 2.0</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!--MENU ENCABEZADO-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Diego</a>
+
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+     <!-- SECCION INICIO -->
+     <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png.jpg" alt="">
+            </div>
+            <h1>DIEGO PATIÑO</h1>
+            <h2>Estudiante ingenieria de sistemas  - Desarrollador front end</h2>
+            <div class="redes">
+                <a target="_blank" href="https://www.facebook.com/" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a target="_blank" href="https://www.instagram.com/" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a target="_blank" href="https://github.com/" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Soy operario con experiencia, Desarrollador web  y estudiante de Ingeniería de Sistemas, apasionado por el aprendizaje constante y la tecnología. Me especializo en desarrollar soluciones prácticas y eficientes, combinando habilidades técnicas con un enfoque orientado al detalle.
+                Además, cuento con sólidas habilidades blandas como comunicación efectiva, trabajo en equipo, dedicación, puntualidad y responsabilidad. Siempre busco superar expectativas y mantener altos estándares de calidad en cada proyecto que emprendo.
+                </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            08-11-1992
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +57 311 551 2786
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            diegopt1234567@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.diegodev.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Bogota, Colombia
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>ESTUDIANTE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>TECNOLOGÍA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                <a href="assets/CV_Diego_Patino.pdf" download="CV_Diego_Patino">
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                </a>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+      <!-- SECCION SKILLS -->
+      <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React</span>
+                        <div class="barra-skill">
+                            <div class="progreso ">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Bases de datos MySQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Oracle Could Infraestructure</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>58%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Manejo de paquete y sistema operativo OFFICE</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Responsabilidad </span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Ingenieria De Sistemas</h4>
+                        <span class="casa">Universidad de Cundinamarca</span>
+                        <span class="fecha">En curso</span>
+                        <p>Actualmente estoy cursando el sexto semestre de licenciatura en ingeniería de sistemas, además de un postgrado en bases de datos.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Desarrollo Web</h4>
+                        <span class="casa">Alura - LATAM</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p>Formación en programación y desarrollo web, actualmente especializado en el campo del frond end, con amplios conocimientos en Javascript, HTML, CSS, React, bases de datos MySQL, Oracle Could Infraestructure.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Bachillerato</h4>
+                        <span class="casa">Instituto Departamental De Media  Antonia Santos - Casd</span>
+                        <span class="fecha">1999 - 2010</span>
+                        <p>Bachillerato técnico </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Front End</h4>
+                        <span class="casa">Alura - LATAM</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p>Tuve participación en proyectos educativos enfocados en el front end, tales como:  diseño y desarrollo de páginas web, aplicativos móviles didácticos, juegos des estresantes, bases de datos, entre otros.</p></p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- SECCION PORTFOLIO -->
+        <section id="portfolio" class="portfolio">
+            <div class="contenido-seccion">
+                <h2>PORTFOLIO</h2>
+                <div class="galeria">
+                    <div class="proyecto">
+                        <img src="img/barberia-alura.png" alt="">
+                        <div class="overlay">
+                            <h3>Barberia Alura</h3>
+                            <p>Diseño pagina web</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="img/alura-midi.png" alt="">
+                        <div class="overlay">
+                            <h3>Alura Midi</h3>
+                            <p>Creado con HTML y Javascript</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="img/alura-play.png" alt="">
+                        <div class="overlay">
+                            <h3>Alura Play</h3>
+                            <p>Creado con HTML, CSS(flexbox) y JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="img/juego-numero-secreto.png" alt="">
+                        <div class="overlay">
+                            <h3>Juego Numero Secreto</h3>
+                            <p>Creado con HTML y JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="img/Pagina web- peliculas.png" alt="">
+                        <div class="overlay">
+                            <h3>Pagina Web</h3>
+                            <p>Creado con HTML, CSS, JavaScript y React</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="img/SQL.jpeg" alt="">
+                        <div class="overlay">
+                            <h3>Base de Datos</h3>
+                            <p>Creada con SQL y MySQL</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+       <!-- SECCION CONTACTO -->
+<section id="contacto" class="contacto">
+    <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+            <!-- Formulario -->
+            <div class="col">
+                <form action="procesar_formulario.php" method="POST">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre" required>
+
+                    <label for="telefono">Teléfono</label>
+                    <input type="text" id="telefono" name="telefono" placeholder="Número telefónico" required>
+
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" name="correo" placeholder="Dirección de correo" required>
+
+                    <label for="tema">Tema</label>
+                    <input type="text" id="tema" name="tema" placeholder="Tema">
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+
+                    <button type="submit">
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Mapa e Información -->
+            <div class="col">
+                <!-- Mapa interactivo -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.8300588931443!2d-74.08175012573774!3d4.609710379258779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99c740b0cb93%3A0x1f7f7c9c1ec66af3!2sBogot%C3%A1%2C%20Colombia!5e0!3m2!1sen!2sco!4v1681314529462!5m2!1sen!2sco"
+                    width="100%"
+                    height="600"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+
+                <!-- Información de contacto -->
+                <div class="info">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Colombia - Bogotá
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            <a href="tel:+573115512786">Llámanos: +57 311 551 2786</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:diegopt1234567@gmail.com">Email: diegopt1234567@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+     <!-- footer -->
+     <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div><h3>Desarrollado por DIEGO PATIÑO</h3></div>
+        <div class="redes">
+            <a target="_blank" href="https://www.facebook.com/" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a target="_blank" href="https://www.instagram.com/" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a target="_blank" href="https://github.com/" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
